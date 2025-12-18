@@ -4,9 +4,9 @@ import '../database/hive_init.dart';
 import '../models/profile.dart';
 
 class ProfileScreen extends StatefulWidget {
-  final VoidCallback? onProfileSaved;
+  final VoidCallback? onSwitchToLogMood;
   
-  const ProfileScreen({super.key, this.onProfileSaved});
+  const ProfileScreen({super.key, this.onSwitchToLogMood});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -94,9 +94,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
         const SnackBar(content: Text('Profile saved successfully')),
       );
 
-      // Call callback to switch to Log Mood tab
-      if (widget.onProfileSaved != null) {
-        widget.onProfileSaved!();
+      // Switch to Log Mood tab
+      if (widget.onSwitchToLogMood != null) {
+        widget.onSwitchToLogMood!();
       }
     }
   }
