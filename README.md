@@ -90,4 +90,10 @@ Dark mode toggle
 Shareable insights
 
 
+License 
+MIT License – feel free to use, modify, and share.
+
+
+Made with  and lunar curiosity
+Track your moods. Follow the Moon.
 
